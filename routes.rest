@@ -1,0 +1,9 @@
+//RENDER 
+### Home
+GET https://cse-341-project1-dj2a.onrender.com/
+
+### Get all contacts
+GET https://cse-341-project1-dj2a.onrender.com/contacts
+
+### Get contact by ID
+GET https://cse-341-project1-dj2a.onrender.com/contacts/69ae218c7a38bea4f13b8e5e

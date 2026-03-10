@@ -11,8 +11,7 @@ connectDB(app);
 app.use('/', require('./routes'));
 
 const port = process.env.PORT || 3000;
-const host = process.env.HOST || 'localhost';
 
-app.listen(port, host, () => {
-    console.log(`Server running at http://${host}:${port}`)
+app.listen(port, () => {
+    console.log(`Server running at port ${port}`)
 });

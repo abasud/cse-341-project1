@@ -1,4 +1,61 @@
-//RENDER 
+// =========================================
+// LOCALHOST ENVIRONMENT
+// =========================================
+
+### Home
+GET http://localhost:3000/
+
+### Get all contacts
+GET http://localhost:3000/contacts
+
+### Get contact by ID
+# @prompt id Enter the contact ID:
+GET http://localhost:3000/contacts/{{id}}
+
+### Create a new contact
+# @prompt firstName Enter the first name:
+# @prompt lastName Enter the last name:
+# @prompt email Enter the email address:
+# @prompt favoriteColor Enter the favorite color:
+# @prompt birthday Enter the birthday (e.g., 1990-05-14):
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "{{firstName}}",
+  "lastName": "{{lastName}}",
+  "email": "{{email}}",
+  "favoriteColor": "{{favoriteColor}}",
+  "birthday": "{{birthday}}"
+}
+
+### Update a contact
+# @prompt id Enter the contact ID to update:
+# @prompt firstName Enter the new first name:
+# @prompt lastName Enter the new last name:
+# @prompt email Enter the new email address:
+# @prompt favoriteColor Enter the new favorite color:
+# @prompt birthday Enter the new birthday (e.g., 1990-05-14):
+PUT http://localhost:3000/contacts/{{id}}
+Content-Type: application/json
+
+{
+  "firstName": "{{firstName}}",
+  "lastName": "{{lastName}}",
+  "email": "{{email}}",
+  "favoriteColor": "{{favoriteColor}}",
+  "birthday": "{{birthday}}"
+}
+
+### Delete a contact
+# @prompt id Enter the contact ID to delete:
+DELETE http://localhost:3000/contacts/{{id}}
+
+
+// =========================================
+// RENDER ENVIRONMENT
+// =========================================
+
 ### Home
 GET https://cse-341-project1-dj2a.onrender.com/
 
@@ -6,4 +63,44 @@ GET https://cse-341-project1-dj2a.onrender.com/
 GET https://cse-341-project1-dj2a.onrender.com/contacts
 
 ### Get contact by ID
-GET https://cse-341-project1-dj2a.onrender.com/contacts/69ae218c7a38bea4f13b8e5e
+# @prompt id Enter the contact ID:
+GET https://cse-341-project1-dj2a.onrender.com/contacts/{{id}}
+
+### Create a new contact
+# @prompt firstName Enter the first name:
+# @prompt lastName Enter the last name:
+# @prompt email Enter the email address:
+# @prompt favoriteColor Enter the favorite color:
+# @prompt birthday Enter the birthday (e.g., 1990-05-14):
+POST https://cse-341-project1-dj2a.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "{{firstName}}",
+  "lastName": "{{lastName}}",
+  "email": "{{email}}",
+  "favoriteColor": "{{favoriteColor}}",
+  "birthday": "{{birthday}}"
+}
+
+### Update a contact
+# @prompt id Enter the contact ID to update:
+# @prompt firstName Enter the new first name:
+# @prompt lastName Enter the new last name:
+# @prompt email Enter the new email address:
+# @prompt favoriteColor Enter the new favorite color:
+# @prompt birthday Enter the new birthday (e.g., 1990-05-14):
+PUT https://cse-341-project1-dj2a.onrender.com/contacts/{{id}}
+Content-Type: application/json
+
+{
+  "firstName": "{{firstName}}",
+  "lastName": "{{lastName}}",
+  "email": "{{email}}",
+  "favoriteColor": "{{favoriteColor}}",
+  "birthday": "{{birthday}}"
+}
+
+### Delete a contact
+# @prompt id Enter the contact ID to delete:
+DELETE https://cse-341-project1-dj2a.onrender.com/contacts/{{id}}

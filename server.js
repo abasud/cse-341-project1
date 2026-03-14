@@ -3,7 +3,6 @@ const express = require('express');
 const connectDB = require('./data/database');
 
 const app = express();
-
 app.use(express.json());
 
 connectDB(app);

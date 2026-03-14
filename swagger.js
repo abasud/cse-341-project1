@@ -6,9 +6,7 @@ const doc = {
     title: 'Contacts App',
     description: 'Automatic documentation for Project1 - CSE 341',
   },
-  host: 'localhost:3000', 
-  schemes: ['http'],
-}
+};
 
 const outputFile = './swagger.json'; 
 

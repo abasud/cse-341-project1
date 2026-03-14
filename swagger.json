@@ -5,10 +5,10 @@
     "description": "Automatic documentation for Project1 - CSE 341",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse-341-project1-dj2a.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {

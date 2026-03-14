@@ -6,6 +6,9 @@ const doc = {
     title: 'Contacts App',
     description: 'Automatic documentation for Project1 - CSE 341',
   },
+
+  host: 'cse-341-project1-dj2a.onrender.com', 
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json'; 
